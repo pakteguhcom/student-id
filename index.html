@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini EDU ID Card Generator</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- html2canvas Library for Downloading Card -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+    <style>
+        /* Custom styles for the ID card gradient and layout */
+        body {
+            background-color: #f0f2f5;
+        }
+        #id-card {
+            background: linear-gradient(135deg, #e0f2f1, #dcedff);
+            background-size: 200% 200%;
+            animation: gradient-animation 10s ease infinite;
+            overflow: hidden; /* Ensures child elements don't overflow rounded corners */
+        }
+
+        @keyframes gradient-animation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Styling for input date picker icon */
+        input[type="date"]::-webkit-calendar-picker-indicator {
+            cursor: pointer;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+
+    <div class="container mx-auto p-4 md:p-8">
+        
+        <!-- Header -->
+        <header class="text-center mb-8">
+            <h1 id="mainTitle" class="text-3xl md:text-4xl font-bold tracking-wide">
+                <!-- Title will be decrypted by JavaScript -->
+            </h1>
+            <p class="text-gray-600 mt-2">
+                Create professional student ID cards instantly. Free online tool for educational institutions.
+            </p>
+             <p class="text-xs text-gray-500 mt-2">
+                If the card doesn't work, contact me on <a href="#" class="text-green-500 font-semibold"><i class="fab fa-whatsapp"></i> WhatsApp</a> or <a href="#" class="text-blue-500 font-semibold"><i class="fab fa-facebook-messenger"></i> Messenger</a>. Also, if you need a <a href="#" class="font-bold text-purple-600">Gemini AI Pro subscription</a>, contact me for a very cheap price.
+            </p>
+        </header>
+
+        <!-- Main Content -->
+        <div class="flex flex-col lg:flex-row gap-8">
+
+            <!-- Left Side: Form Controls -->
+            <div class="lg:w-1/2 bg-white p-6 rounded-xl shadow-lg">
+                
+                <!-- Location Detection -->
+                 <div class="bg-gray-50 border border-gray-200 rounded-lg p-4 mb-6 text-center">
+                    <p class="text-sm text-red-600 font-semibold mb-3"><i class="fas fa-exclamation-triangle mr-2"></i>Location detection failed, using default</p>
+                    <div class="flex justify-center items-center gap-2 mb-3">
+                        <button id="switchToBD" class="p-2 border rounded-md"><img src="https://flagcdn.com/bd.svg" class="w-6"></button>
+                        <button id="switchToIN" class="p-2 border rounded-md border-blue-500 ring-2 ring-blue-200"><img src="https://flagcdn.com/in.svg" class="w-6"></button>
+                        <button id="switchToUK" class="p-2 border rounded-md"><img src="https://flagcdn.com/gb.svg" class="w-6"></button>
+                        <button id="switchToNG" class="p-2 border rounded-md"><img src="https://flagcdn.com/ng.svg" class="w-6"></button>
+                        <button id="switchToPK" class="p-2 border rounded-md"><img src="https://flagcdn.com/pk.svg" class="w-6"></button>
+                        <button id="switchToAU" class="p-2 border rounded-md"><img src="https://flagcdn.com/au.svg" class="w-6"></button>
+                    </div>
+                    <div class="flex items-center justify-center text-xs text-gray-500">
+                        <i class="fas fa-info-circle mr-2"></i>
+                        <span>Auto-detects your location via IP address</span>
+                        <button id="refreshLocationBtn" class="ml-4 font-semibold text-blue-600 hover:underline"><i class="fas fa-sync-alt mr-1"></i>Refresh</button>
+                    </div>
+                </div>
+
+                <!-- Form Fields -->
+                <div class="grid grid-cols-1 gap-5">
+                    
+                    <div>
+                        <label class="font-semibold text-sm mb-1 block"><i class="fas fa-university mr-2 text-indigo-500"></i>College Name:</label>
+                        <div class="flex gap-2">
+                            <input type="text" id="collegeNameInput" placeholder="Detecting your location..." class="w-full p-2 border rounded-md focus:ring-2 focus:ring-indigo-300 transition">
+                            <button id="randomCollegeBtn" class="px-4 py-2 bg-indigo-500 text-white rounded-md hover:bg-indigo-600 transition"><i class="fas fa-random"></i> Pick College</button>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="font-semibold text-sm mb-1 block"><i class="fas fa-id-card mr-2 text-purple-500"></i>ID Number:</label>
+                        <div class="flex gap-2">
+                            <input type="text" id="idInput" value="21BC5229" class="w-full p-2 border rounded-md focus:ring-2 focus:ring-purple-300 transition">
+                            <button id="randomIdBtn" class="px-4 py-2 bg-purple-500 text-white rounded-md hover:bg-purple-600 transition"><i class="fas fa-cogs"></i> Generate</button>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="font-semibold text-sm mb-1 block"><i class="fas fa-envelope mr-2 text-teal-500"></i>Student Email:</label>
+                        <div class="flex gap-2">
+                            <input type="email" id="studentEmailInput" placeholder="Detecting email format..." class="w-full p-2 border rounded-md bg-gray-50" readonly>
+                            <button id="copyEmailBtn" class="px-4 py-2 bg-teal-500 text-white rounded-md hover:bg-teal-600 transition"><i class="fas fa-copy"></i> Copy</button>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="font-semibold text-sm mb-1 block"><i class="fas fa-mobile-alt mr-2 text-orange-500"></i>Mobile:</label>
+                        <div class="flex gap-2">
+                            <input type="tel" id="mobileInput" placeholder="Detecting phone format..." class="w-full p-2 border rounded-md focus:ring-2 focus:ring-orange-300 transition">
+                            <button id="randomMobileBtn" class="px-4 py-2 bg-orange-500 text-white rounded-md hover:bg-orange-600 transition"><i class="fas fa-dice"></i> New Number</button>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="font-semibold text-sm mb-1 block"><i class="fas fa-chalkboard-teacher mr-2 text-blue-500"></i>Class:</label>
+                        <div class="flex gap-2">
+                            <input type="text" id="classInput" value="CSE" class="w-full p-2 border rounded-md focus:ring-2 focus:ring-blue-300 transition">
+                            <button id="randomClassBtn" class="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition"><i class="fas fa-random"></i> Pick Class</button>
+                        </div>
+                    </div>
+
+                     <div>
+                        <label class="font-semibold text-sm mb-1 block"><i class="fas fa-calendar-alt mr-2 text-red-500"></i>Date Of Birth:</label>
+                        <input type="date" id="dobInput" value="2000-01-15" class="w-full p-2 border rounded-md focus:ring-2 focus:ring-red-300 transition">
+                    </div>
+
+                    <div>
+                        <label class="font-semibold text-sm mb-1 block"><i class="fas fa-map-marker-alt mr-2 text-green-500"></i>Address:</label>
+                        <div class="flex gap-2">
+                           <input type="text" id="addressInput" placeholder="Detecting address format..." class="w-full p-2 border rounded-md focus:ring-2 focus:ring-green-300 transition">
+                           <button id="randomAddressBtn" class="px-4 py-2 bg-green-500 text-white rounded-md hover:bg-green-600 transition"><i class="fas fa-map-pin"></i> Pick Location</button>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label class="font-semibold text-sm mb-1 block"><i class="fas fa-calendar-check mr-2 text-gray-500"></i>Issue Date:</label>
+                            <input type="date" id="issueDateInput" value="2025-11-08" class="w-full p-2 border rounded-md">
+                        </div>
+                        <div>
+                            <label class="font-semibold text-sm mb-1 block"><i class="fas fa-calendar-times mr-2 text-gray-500"></i>Valid Until:</label>
+                            <input type="date" id="validDateInput" value="2026-11-08" class="w-full p-2 border rounded-md">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="font-semibold text-sm mb-1 block"><i class="fas fa-globe mr-2 text-sky-500"></i>Website:</label>
+                        <input type="text" id="websiteInput" placeholder="Detecting website..." class="w-full p-2 border rounded-md focus:ring-2 focus:ring-sky-300 transition">
+                    </div>
+
+                    <div>
+                        <label class="font-semibold text-sm mb-1 block"><i class="fas fa-user-graduate mr-2 text-pink-500"></i>Student Name:</label>
+                         <div class="flex gap-2">
+                            <input type="text" id="nameInput" placeholder="DETECTING NAME FORMAT..." class="w-full p-2 border rounded-md focus:ring-2 focus:ring-pink-300 transition" style="text-transform: uppercase;">
+                             <button id="randomNameBtn" class="px-4 py-2 bg-pink-500 text-white rounded-md hover:bg-pink-600 transition"><i class="fas fa-user-plus"></i> Pick Name</button>
+                         </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
+                        <div>
+                            <label class="font-semibold text-sm mb-1 block"><i class="fas fa-image mr-2 text-red-500"></i>Student Photo</label>
+                             <button onclick="document.getElementById('studentPhotoUpload').click()" class="w-full px-3 py-2 bg-red-100 text-red-700 rounded-md hover:bg-red-200 transition text-sm">Choose File</button>
+                             <input type="file" id="studentPhotoUpload" class="hidden" accept="image/*">
+                        </div>
+                         <div>
+                            <label class="font-semibold text-sm mb-1 block"><i class="fas fa-building mr-2 text-yellow-500"></i>College Logo</label>
+                             <button onclick="document.getElementById('collegeLogoUpload').click()" class="w-full px-3 py-2 bg-yellow-100 text-yellow-700 rounded-md hover:bg-yellow-200 transition text-sm">Choose File</button>
+                             <input type="file" id="collegeLogoUpload" class="hidden" accept="image/*">
+                        </div>
+                         <div>
+                            <label class="font-semibold text-sm mb-1 block"><i class="fas fa-pen-fancy mr-2 text-blue-500"></i>Principal Signature</label>
+                             <button onclick="document.getElementById('principalSignatureUpload').click()" class="w-full px-3 py-2 bg-blue-100 text-blue-700 rounded-md hover:bg-blue-200 transition text-sm">Choose File</button>
+                             <input type="file" id="principalSignatureUpload" class="hidden" accept="image/*">
+                        </div>
+                    </div>
+                     <div>
+                        <div class="flex gap-2">
+                           <input type="text" id="principalNameInput" placeholder="Type principal signature text" class="w-full p-2 border rounded-md">
+                           <button id="randomPrincipalNameBtn" class="px-4 py-2 bg-emerald-500 text-white rounded-md hover:bg-emerald-600 transition"><i class="fas fa-user-tie"></i> Pick Name</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side: Live Preview -->
+            <div class="lg:w-1/2 flex flex-col items-center">
+                <div class="w-full max-w-sm">
+                     <p class="text-xs text-gray-500 mb-2 text-center">
+                        If the card doesn't work, contact me on <a href="#" class="text-green-500 font-semibold"><i class="fab fa-whatsapp"></i> WhatsApp</a> or <a href="#" class="text-blue-500 font-semibold"><i class="fab fa-facebook-messenger"></i> Messenger</a>. Also, if you need a <a href="#" class="font-bold text-purple-600">Gemini AI Pro subscription</a>, contact me for a very cheap price
+                    </p>
+                    <h2 class="text-2xl font-bold text-center mb-4">Live ID Card Preview</h2>
+                    
+                    <!-- ID Card -->
+                    <div id="id-card" class="w-full aspect-[54/86] rounded-2xl shadow-2xl p-4 flex flex-col relative text-gray-800">
+                        <!-- Header -->
+                        <div class="flex items-center justify-between mb-2">
+                            <img id="card-logo" src="https://i.ibb.co/1G0wV1Z/dummy-logo.png" alt="Logo" class="h-12">
+                            <div class="text-center">
+                                <span id="card-university" class="font-bold text-sm leading-tight block"></span>
+                            </div>
+                            <div class="w-12 h-12"></div> <!-- Spacer -->
+                        </div>
+
+                        <div class="text-center my-2">
+                            <span class="bg-teal-500 text-white px-4 py-1 rounded-full text-xs font-bold tracking-wider">STUDENT IDENTITY CARD</span>
+                        </div>
+
+                        <!-- Photo -->
+                        <div class="flex justify-center items-center my-2">
+                             <div class="w-28 h-28 rounded-full border-4 border-white shadow-md bg-gray-200 overflow-hidden">
+                                <img id="card-photo" src="assets/photos/01.png" class="w-full h-full object-cover" alt="Student Photo">
+                            </div>
+                        </div>
+
+                        <!-- Details -->
+                        <div class="text-center mt-2 flex-grow">
+                            <h2 id="cardName" class="text-xl font-bold uppercase"></h2>
+                             <div class="my-2 border-t-2 border-teal-300 w-3/4 mx-auto"></div>
+                            <p class="text-sm font-mono"><strong>ID No:</strong> <span id="card-id">21BC5229</span></p>
+                            <p class="text-sm"><strong>Class:</strong> <span id="card-class">CSE</span></p>
+                            <p class="text-sm"><strong>D.O.B:</strong> <span id="card-dob">15/01/2000</span></p>
+                            <p class="text-sm"><strong>Validity:</strong> <span id="card-validity">11/25 - 11/26</span></p>
+                            
+                            <div class="mt-2 p-2 bg-gray-100/70 rounded-md text-xs relative">
+                                <img id="center-watermark" src="https://i.ibb.co/1G0wV1Z/dummy-logo.png" class="absolute inset-0 w-full h-full object-contain opacity-10" alt="Watermark"/>
+                                <p><strong>Mobile:</strong> <span id="card-mobile"></span></p>
+                                <p><strong>Email:</strong> <span id="card-email"></span></p>
+                            </div>
+                        </div>
+
+                        <!-- Footer -->
+                        <div class="mt-auto flex justify-between items-end text-xs">
+                            <div>
+                                <strong>Website:</strong> <a id="card-website" href="#" class="text-blue-600"></a>
+                            </div>
+                            <div class="text-center">
+                                <span id="card-principal-name" class="font-serif italic text-base">Principal Name</span>
+                                <hr class="border-gray-600">
+                                <span id="cardPrincipalCaption">Principal's Signature</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button id="downloadCardButton" class="mt-6 w-full bg-purple-600 text-white font-bold py-3 rounded-lg hover:bg-purple-700 transition-transform transform hover:scale-105 shadow-lg">
+                        <i class="fas fa-download mr-2"></i>
+                        Download Card
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <footer class="text-center mt-12 text-sm text-gray-500">
+            <p>&copy; <span id="currentYear">2025</span> Gemini EDU ID Card Generator. All rights reserved.</p>
+        </footer>
+    </div>
+    
+    <!-- Link to your JavaScript file -->
+    <script src="script.js"></script>
+    <div id="detectionStatus"></div>
+
+</body>
+</html>
