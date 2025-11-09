@@ -199,29 +199,29 @@ const countryConfig = {
             'Dhaka International University': 'Prof. K.M. Mohsin'
         },
         logos: {
-            'Dhaka International University': 'assets/bd-logo/diu.png',
-            'University of Dhaka': 'assets/bd-logo/dulogo-light_new.png',
-            'Bangladesh University of Engineering and Technology (BUET)': 'assets/bd-logo/buet.png',
-            'Jahangirnagar University': 'assets/bd-logo/juniv.png',
-            'Rajshahi University': 'assets/bd-logo/ru-logo.png',
-            'Chittagong University': 'assets/bd-logo/cu.png',
-            'Khulna University': 'assets/bd-logo/ku.png',
-            'Bangladesh Agricultural University (BAU)': 'assets/bd-logo/bau.png',
-            'Chittagong University of Engineering and Technology (CUET)': 'assets/bd-logo/cuet.png',
-            'Rajshahi University of Engineering and Technology (RUET)': 'assets/bd-logo/ruet.png',
-            'Khulna University of Engineering and Technology (KUET)': 'assets/bd-logo/kuet.png',
-            'Islamic University of Technology (IUT)': 'assets/bd-logo/iutoic-dhaka.png',
-            'Shahjalal University of Science and Technology (SUST)': 'assets/bd-logo/sust..png',
-            'Bangladesh University of Professionals (BUP)': 'assets/bd-logo/bup.png',
-            'Military Institute of Science and Technology (MIST)': 'assets/bd-logo/mist.png',
-            'North South University (NSU)': 'assets/bd-logo/northsouth.png',
-            'Independent University Bangladesh (IUB)': 'assets/bd-logo/iub.png',
-            'BRAC University': 'assets/bd-logo/bracu.png',
-            'American International University Bangladesh (AIUB)': 'assets/bd-logo/aiub.png',
-            'East West University (EWU)': 'assets/bd-logo/ewubd.png',
-            'United International University (UIU)': 'assets/bd-logo/uiu.png',
-            'Bangladesh University of Business and Technology (BUBT)': 'assets/bd-logo/bubt.png',
-            'Daffodil International University (DIU)': 'assets/bd-logo/daffodilvarsity.png'
+            'Dhaka International University': 'https://elitetool.pages.dev/student-id/assets/bd-logo/diu.png',
+            'University of Dhaka': 'https://elitetool.pages.dev/student-id/assets/bd-logo/dulogo-light_new.png',
+            'Bangladesh University of Engineering and Technology (BUET)': 'https://elitetool.pages.dev/student-id/assets/bd-logo/buet.png',
+            'Jahangirnagar University': 'https://elitetool.pages.dev/student-id/assets/bd-logo/juniv.png',
+            'Rajshahi University': 'https://elitetool.pages.dev/student-id/assets/bd-logo/ru-logo.png',
+            'Chittagong University': 'https://elitetool.pages.dev/student-id/assets/bd-logo/cu.png',
+            'Khulna University': 'https://elitetool.pages.dev/student-id/assets/bd-logo/ku.png',
+            'Bangladesh Agricultural University (BAU)': 'https://elitetool.pages.dev/student-id/assets/bd-logo/bau.png',
+            'Chittagong University of Engineering and Technology (CUET)': 'https://elitetool.pages.dev/student-id/assets/bd-logo/cuet.png',
+            'Rajshahi University of Engineering and Technology (RUET)': 'https://elitetool.pages.dev/student-id/assets/bd-logo/ruet.png',
+            'Khulna University of Engineering and Technology (KUET)': 'https://elitetool.pages.dev/student-id/assets/bd-logo/kuet.png',
+            'Islamic University of Technology (IUT)': 'https://elitetool.pages.dev/student-id/assets/bd-logo/iutoic-dhaka.png',
+            'Shahjalal University of Science and Technology (SUST)': 'https://elitetool.pages.dev/student-id/assets/bd-logo/sust..png',
+            'Bangladesh University of Professionals (BUP)': 'https://elitetool.pages.dev/student-id/assets/bd-logo/bup.png',
+            'Military Institute of Science and Technology (MIST)': 'https://elitetool.pages.dev/student-id/assets/bd-logo/mist.png',
+            'North South University (NSU)': 'https://elitetool.pages.dev/student-id/assets/bd-logo/northsouth.png',
+            'Independent University Bangladesh (IUB)': 'https://elitetool.pages.dev/student-id/assets/bd-logo/iub.png',
+            'BRAC University': 'https://elitetool.pages.dev/student-id/assets/bd-logo/bracu.png',
+            'American International University Bangladesh (AIUB)': 'https://elitetool.pages.dev/student-id/assets/bd-logo/aiub.png',
+            'East West University (EWU)': 'https://elitetool.pages.dev/student-id/assets/bd-logo/ewubd.png',
+            'United International University (UIU)': 'https://elitetool.pages.dev/student-id/assets/bd-logo/uiu.png',
+            'Bangladesh University of Business and Technology (BUBT)': 'https://elitetool.pages.dev/student-id/assets/bd-logo/bubt.png',
+            'Daffodil International University (DIU)': 'https://elitetool.pages.dev/student-id/assets/bd-logo/daffodilvarsity.png'
         },
         names: [
             'Ahmed Rahman',
@@ -492,29 +492,29 @@ const countryConfig = {
             'National University of Computer and Emerging Sciences (FAST-NUCES)': 'Prof. Amir Muhammad'
         },
         logos: {
-            'University of the Punjab': 'assets/pk-logo/pu.png',
-            'National University of Sciences and Technology (NUST)': 'assets/pk-logo/nust.png',
-            'Quaid-i-Azam University (QAU)': 'assets/pk-logo/qau.png',
-            'University of Karachi': 'assets/pk-logo/uok.png',
-            'University of Engineering and Technology, Lahore (UET Lahore)': 'assets/pk-logo/uet.png',
-            'COMSATS University Islamabad': 'assets/pk-logo/comsats.png',
-            'Allama Iqbal Open University (AIOU)': 'assets/pk-logo/aiou.png',
-            'University of Peshawar': 'assets/pk-logo/uop.png',
-            'Bahauddin Zakariya University (BZU)': 'assets/pk-logo/bzu.png',
-            'Government College University, Lahore (GCU Lahore)': 'assets/pk-logo/gcu.png',
-            'Pakistan Institute of Engineering and Applied Sciences (PIEAS)': 'assets/pk-logo/pieas.png',
-            'National Textile University (NTU)': 'assets/pk-logo/ntu.png',
-            'University of Sargodha (UOS)': 'assets/pk-logo/uos.png',
-            'Institute of Space Technology (IST)': 'assets/pk-logo/ist.png',
-            'Lahore University of Management Sciences (LUMS)': 'assets/pk-logo/LUMS Logo.png',
-            'Aga Khan University (AKU)': 'assets/pk-logo/AKU_logo.png',
-            'Institute of Business Administration, Karachi (IBA)': 'assets/pk-logo/iba.png',
-            'University of Lahore (UOL)': 'assets/pk-logo/uol.png',
-            'Hamdard University': 'assets/pk-logo/hamdard.png',
-            'Bahria University': 'assets/pk-logo/bahria.png',
-            'Iqra University': 'assets/pk-logo/iqra.png',
-            'Riphah International University': 'assets/pk-logo/riphah-logo.svg',
-            'National University of Computer and Emerging Sciences (FAST-NUCES)': 'assets/pk-logo/NU-logo.png'
+            'University of the Punjab': 'https://elitetool.pages.dev/student-id/assets/pk-logo/pu.png',
+            'National University of Sciences and Technology (NUST)': 'https://elitetool.pages.dev/student-id/assets/pk-logo/nust.png',
+            'Quaid-i-Azam University (QAU)': 'https://elitetool.pages.dev/student-id/assets/pk-logo/qau.png',
+            'University of Karachi': 'https://elitetool.pages.dev/student-id/assets/pk-logo/uok.png',
+            'University of Engineering and Technology, Lahore (UET Lahore)': 'https://elitetool.pages.dev/student-id/assets/pk-logo/uet.png',
+            'COMSATS University Islamabad': 'https://elitetool.pages.dev/student-id/assets/pk-logo/comsats.png',
+            'Allama Iqbal Open University (AIOU)': 'https://elitetool.pages.dev/student-id/assets/pk-logo/aiou.png',
+            'University of Peshawar': 'https://elitetool.pages.dev/student-id/assets/pk-logo/uop.png',
+            'Bahauddin Zakariya University (BZU)': 'https://elitetool.pages.dev/student-id/assets/pk-logo/bzu.png',
+            'Government College University, Lahore (GCU Lahore)': 'https://elitetool.pages.dev/student-id/assets/pk-logo/gcu.png',
+            'Pakistan Institute of Engineering and Applied Sciences (PIEAS)': 'https://elitetool.pages.dev/student-id/assets/pk-logo/pieas.png',
+            'National Textile University (NTU)': 'https://elitetool.pages.dev/student-id/assets/pk-logo/ntu.png',
+            'University of Sargodha (UOS)': 'https://elitetool.pages.dev/student-id/assets/pk-logo/uos.png',
+            'Institute of Space Technology (IST)': 'https://elitetool.pages.dev/student-id/assets/pk-logo/ist.png',
+            'Lahore University of Management Sciences (LUMS)': 'https://elitetool.pages.dev/student-id/assets/pk-logo/LUMS Logo.png',
+            'Aga Khan University (AKU)': 'https://elitetool.pages.dev/student-id/assets/pk-logo/AKU_logo.png',
+            'Institute of Business Administration, Karachi (IBA)': 'https://elitetool.pages.dev/student-id/assets/pk-logo/iba.png',
+            'University of Lahore (UOL)': 'https://elitetool.pages.dev/student-id/assets/pk-logo/uol.png',
+            'Hamdard University': 'https://elitetool.pages.dev/student-id/assets/pk-logo/hamdard.png',
+            'Bahria University': 'https://elitetool.pages.dev/student-id/assets/pk-logo/bahria.png',
+            'Iqra University': 'https://elitetool.pages.dev/student-id/assets/pk-logo/iqra.png',
+            'Riphah International University': 'https://elitetool.pages.dev/student-id/assets/pk-logo/riphah-logo.svg',
+            'National University of Computer and Emerging Sciences (FAST-NUCES)': 'https://elitetool.pages.dev/student-id/assets/pk-logo/NU-logo.png'
         },
         names: [
             'Ali Khan','Ayesha Siddiqui','Ahmed Raza','Fatima Noor','Usman Ali','Maryam Sheikh','Zain Abbas','Hira Khan','Bilal Ahmed','Laiba Iqbal','Hamza Saeed','Zoya Khan','Imran Shah','Aqsa Fatima','Salman Rafiq','Maira Ali'
@@ -622,27 +622,27 @@ const countryConfig = {
             'University of the Pacific': 'Dr. Christopher Callahan'
         },
         logos: {
-            'University of Oxford': 'assets/uk-logo/ox.png',
-            'University of Cambridge': 'assets/uk-logo/ac.png',
-            'Imperial College London': 'assets/uk-logo/imperial.png',
-            'London School of Economics (LSE)': 'assets/uk-logo/imperial.png',
-            'University College London (UCL)': 'assets/uk-logo/ucl.png',
-            'University of Edinburgh': 'assets/uk-logo/ox.png',
-            'King’s College London': 'assets/uk-logo/kcl.png',
-            'University of Manchester': 'assets/uk-logo/manchester.ico',
-            'University of Bristol': 'assets/uk-logo/bristol.png',
-            'University of Glasgow': 'assets/uk-logo/gla.png',
-            'University of Birmingham': 'assets/uk-logo/birmingham.png',
-            'University of Leeds': 'assets/uk-logo/leeds.png',
-            'University of Warwick': 'assets/uk-logo/warwick.PNG',
-            'University of Sheffield': 'assets/uk-logo/sheffield.png',
-            'University of Southampton': 'assets/uk-logo/ox.png',
-            'University of York': 'assets/uk-logo/york.png',
-            'University of Liverpool': 'assets/uk-logo/liverpool.png',
-            'University of Nottingham': 'assets/uk-logo/nottingham.png',
-            'University of St Andrews': 'assets/uk-logo/st-andrews.png',
-            'Queen Mary University of London': 'assets/uk-logo/qmul.png',
-            'University of the Pacific': 'assets/uk-logo/pacific.png'
+            'University of Oxford': 'https://elitetool.pages.dev/student-id/assets/uk-logo/ox.png',
+            'University of Cambridge': 'https://elitetool.pages.dev/student-id/assets/uk-logo/ac.png',
+            'Imperial College London': 'https://elitetool.pages.dev/student-id/assets/uk-logo/imperial.png',
+            'London School of Economics (LSE)': 'https://elitetool.pages.dev/student-id/assets/uk-logo/imperial.png',
+            'University College London (UCL)': 'https://elitetool.pages.dev/student-id/assets/uk-logo/ucl.png',
+            'University of Edinburgh': 'https://elitetool.pages.dev/student-id/assets/uk-logo/ox.png',
+            'King’s College London': 'https://elitetool.pages.dev/student-id/assets/uk-logo/kcl.png',
+            'University of Manchester': 'https://elitetool.pages.dev/student-id/assets/uk-logo/manchester.ico',
+            'University of Bristol': 'https://elitetool.pages.dev/student-id/assets/uk-logo/bristol.png',
+            'University of Glasgow': 'https://elitetool.pages.dev/student-id/assets/uk-logo/gla.png',
+            'University of Birmingham': 'https://elitetool.pages.dev/student-id/assets/uk-logo/birmingham.png',
+            'University of Leeds': 'https://elitetool.pages.dev/student-id/assets/uk-logo/leeds.png',
+            'University of Warwick': 'https://elitetool.pages.dev/student-id/assets/uk-logo/warwick.PNG',
+            'University of Sheffield': 'https://elitetool.pages.dev/student-id/assets/uk-logo/sheffield.png',
+            'University of Southampton': 'https://elitetool.pages.dev/student-id/assets/uk-logo/ox.png',
+            'University of York': 'https://elitetool.pages.dev/student-id/assets/uk-logo/york.png',
+            'University of Liverpool': 'https://elitetool.pages.dev/student-id/assets/uk-logo/liverpool.png',
+            'University of Nottingham': 'https://elitetool.pages.dev/student-id/assets/uk-logo/nottingham.png',
+            'University of St Andrews': 'https://elitetool.pages.dev/student-id/assets/uk-logo/st-andrews.png',
+            'Queen Mary University of London': 'https://elitetool.pages.dev/student-id/assets/uk-logo/qmul.png',
+            'University of the Pacific': 'https://elitetool.pages.dev/student-id/assets/uk-logo/pacific.png'
         },
         names: ['Oliver Smith','Amelia Johnson','George Brown','Isla Jones','Harry Williams','Emily Taylor']
     },
@@ -746,26 +746,26 @@ const countryConfig = {
             'Adebayo Ogunlesi', 'Chinwe Okonkwo', 'Emeka Nwosu', 'Fatima Ibrahim', 'Gabriel Adebayo', 'Hauwa Mohammed', 'Ibrahim Tanko', 'Joyce Okafor', 'Kemi Adeyemi', 'Ladi Bello', 'Musa Garba', 'Ngozi Okwu', 'Oluwaseun Adebayo', 'Patience Musa', 'Quadri Olanrewaju', 'Ruth Okonkwo', 'Samuel Adeyemi', 'Temitope Ogunlesi', 'Uche Nwankwo', 'Victoria Okafor'
         ],
         logos: {
-            'University of Ibadan': 'assets/ng-logo/ui.png',
-            'University of Lagos': 'assets/ng-logo/unilag.png',
-            'Obafemi Awolowo University': 'assets/ng-logo/oauife.png',
-            'Ahmadu Bello University': 'assets/ng-logo/abu.png',
-            'University of Nigeria, Nsukka': 'assets/ng-logo/unn.png',
-            'University of Ilorin': 'assets/ng-logo/unilorin.png',
-            'Federal University of Technology Akure': 'assets/ng-logo/futa.png',
-            'University of Benin': 'assets/ng-logo/uniben.png',
-            'Covenant University': 'assets/ng-logo/covenantuniversity.png',
-            'Lagos State University': 'assets/ng-logo/lasu.png',
-            'University of Jos': 'assets/ng-logo/unijos.png',
-            'Bayero University Kano': 'assets/ng-logo/buk.png',
-            'Federal University of Technology Minna': 'assets/ng-logo/futminna.png',
-            'University of Port Harcourt': 'assets/ng-logo/uniport.png',
-            'Nnamdi Azikiwe University': 'assets/ng-logo/unizik.png',
-            'Adekunle Ajasin University': 'assets/ng-logo/aaua.png',
-            'University of Agriculture Abeokuta': 'assets/ng-logo/funaab.png',
-            'Babcock University': 'assets/ng-logo/babcock.png',
-            'Redeemer\'s University Nigeria': 'assets/ng-logo/run.png',
-            'Pan-Atlantic University': 'assets/ng-logo/pau.png'
+            'University of Ibadan': 'https://elitetool.pages.dev/student-id/assets/ng-logo/ui.png',
+            'University of Lagos': 'https://elitetool.pages.dev/student-id/assets/ng-logo/unilag.png',
+            'Obafemi Awolowo University': 'https://elitetool.pages.dev/student-id/assets/ng-logo/oauife.png',
+            'Ahmadu Bello University': 'https://elitetool.pages.dev/student-id/assets/ng-logo/abu.png',
+            'University of Nigeria, Nsukka': 'https://elitetool.pages.dev/student-id/assets/ng-logo/unn.png',
+            'University of Ilorin': 'https://elitetool.pages.dev/student-id/assets/ng-logo/unilorin.png',
+            'Federal University of Technology Akure': 'https://elitetool.pages.dev/student-id/assets/ng-logo/futa.png',
+            'University of Benin': 'https://elitetool.pages.dev/student-id/assets/ng-logo/uniben.png',
+            'Covenant University': 'https://elitetool.pages.dev/student-id/assets/ng-logo/covenantuniversity.png',
+            'Lagos State University': 'https://elitetool.pages.dev/student-id/assets/ng-logo/lasu.png',
+            'University of Jos': 'https://elitetool.pages.dev/student-id/assets/ng-logo/unijos.png',
+            'Bayero University Kano': 'https://elitetool.pages.dev/student-id/assets/ng-logo/buk.png',
+            'Federal University of Technology Minna': 'https://elitetool.pages.dev/student-id/assets/ng-logo/futminna.png',
+            'University of Port Harcourt': 'https://elitetool.pages.dev/student-id/assets/ng-logo/uniport.png',
+            'Nnamdi Azikiwe University': 'https://elitetool.pages.dev/student-id/assets/ng-logo/unizik.png',
+            'Adekunle Ajasin University': 'https://elitetool.pages.dev/student-id/assets/ng-logo/aaua.png',
+            'University of Agriculture Abeokuta': 'https://elitetool.pages.dev/student-id/assets/ng-logo/funaab.png',
+            'Babcock University': 'https://elitetool.pages.dev/student-id/assets/ng-logo/babcock.png',
+            'Redeemer\'s University Nigeria': 'https://elitetool.pages.dev/student-id/assets/ng-logo/run.png',
+            'Pan-Atlantic University': 'https://elitetool.pages.dev/student-id/assets/ng-logo/pau.png'
         }
     },
     'AU': {
@@ -828,15 +828,15 @@ const countryConfig = {
             'James Mitchell', 'Sarah Thompson', 'Michael Chen', 'Emma Wilson', 'David Brown', 'Jessica Lee', 'Christopher Taylor', 'Amanda Davis', 'Matthew Anderson', 'Rebecca White', 'Daniel Johnson', 'Sophie Martin', 'Andrew Clark', 'Olivia Green', 'Benjamin Hall', 'Charlotte King', 'Samuel Wright', 'Isabella Young', 'William Turner', 'Grace Parker'
         ],
         logos: {
-            'The University of Sydney': 'assets/🇦🇺-logo/sydney.png',
-            'Monash University': 'assets/🇦🇺-logo/monash.png',
-            'The Australian National University': 'assets/🇦🇺-logo/anu.png',
-            'The University of Melbourne': 'assets/🇦🇺-logo/Melbourne.png',
-            'The University of Queensland': 'assets/🇦🇺-logo/uq.png',
-            'University of New South Wales': 'assets/🇦🇺-logo/unsw.png',
-            'University of Western Australia': 'assets/🇦🇺-logo/uwa.png',
-            'University of Adelaide': 'assets/🇦🇺-logo/adelaide.png',
-            'University of Technology Sydney': 'assets/🇦🇺-logo/uts.png'
+            'The University of Sydney': 'https://elitetool.pages.dev/student-id/assets/🇦🇺-logo/sydney.png',
+            'Monash University': 'https://elitetool.pages.dev/student-id/assets/🇦🇺-logo/monash.png',
+            'The Australian National University': 'https://elitetool.pages.dev/student-id/assets/🇦🇺-logo/anu.png',
+            'The University of Melbourne': 'https://elitetool.pages.dev/student-id/assets/🇦🇺-logo/Melbourne.png',
+            'The University of Queensland': 'https://elitetool.pages.dev/student-id/assets/🇦🇺-logo/uq.png',
+            'University of New South Wales': 'https://elitetool.pages.dev/student-id/assets/🇦🇺-logo/unsw.png',
+            'University of Western Australia': 'https://elitetool.pages.dev/student-id/assets/🇦🇺-logo/uwa.png',
+            'University of Adelaide': 'https://elitetool.pages.dev/student-id/assets/🇦🇺-logo/adelaide.png',
+            'University of Technology Sydney': 'https://elitetool.pages.dev/student-id/assets/🇦🇺-logo/uts.png'
         }
     }
 };
@@ -1756,18 +1756,18 @@ const randomAddresses = [
              'Anna University': 'Sardar Patel Rd, Guindy, Chennai, Tamil Nadu 600025',
              'University of Hyderabad': 'Prof. C.R. Rao Road, Gachibowli, Hyderabad, Telangana 500046'
  };
- // Local university logos from assets/logo/ folder
+ // Local university logos from https://elitetool.pages.dev/student-id/assets/logo/ folder
  const universityLogos = {
-             'Guru Gobind Singh Indraprastha University': 'assets/logo/ipu-logo.png',
-             'University of Delhi': 'assets/logo/logo-du.png',
-             'Jawaharlal Nehru University': 'assets/logo/jnu-logo.png',
-             'Panjab University, Chandigarh': 'assets/logo/ipu-logo.png', // Using IPU logo as placeholder
-             'University of Mumbai': 'assets/logo/ipu-logo.png', // Using IPU logo as placeholder
-             'Savitribai Phule Pune University': 'assets/logo/unipune.ico',
-             'Banaras Hindu University': 'assets/logo/bhu-logo.png',
-             'University of Calcutta': 'assets/logo/calun-Lgo.png',
-             'Anna University': 'assets/logo/ANNAUNIVERSITYLOGO.png',
-             'University of Hyderabad': 'assets/logo/UoH-log-new3L.png'
+             'Guru Gobind Singh Indraprastha University': 'https://elitetool.pages.dev/student-id/assets/logo/ipu-logo.png',
+             'University of Delhi': 'https://elitetool.pages.dev/student-id/assets/logo/logo-du.png',
+             'Jawaharlal Nehru University': 'https://elitetool.pages.dev/student-id/assets/logo/jnu-logo.png',
+             'Panjab University, Chandigarh': 'https://elitetool.pages.dev/student-id/assets/logo/ipu-logo.png', // Using IPU logo as placeholder
+             'University of Mumbai': 'https://elitetool.pages.dev/student-id/assets/logo/ipu-logo.png', // Using IPU logo as placeholder
+             'Savitribai Phule Pune University': 'https://elitetool.pages.dev/student-id/assets/logo/unipune.ico',
+             'Banaras Hindu University': 'https://elitetool.pages.dev/student-id/assets/logo/bhu-logo.png',
+             'University of Calcutta': 'https://elitetool.pages.dev/student-id/assets/logo/calun-Lgo.png',
+             'Anna University': 'https://elitetool.pages.dev/student-id/assets/logo/ANNAUNIVERSITYLOGO.png',
+             'University of Hyderabad': 'https://elitetool.pages.dev/student-id/assets/logo/UoH-log-new3L.png'
  };
  const universityPrincipals = {
              'Guru Gobind Singh Indraprastha University': 'Prof. Mahesh Verma',
@@ -1996,9 +1996,9 @@ Object.assign(universityDefaults, {
              }
  }
 const randomPhotos = [
-            'assets/photos/01.png',
-            'assets/photos/01.png',
-            'assets/photos/01.png'
+            'https://elitetool.pages.dev/student-id/assets/photos/01.png',
+            'https://elitetool.pages.dev/student-id/assets/photos/01.png',
+            'https://elitetool.pages.dev/student-id/assets/photos/01.png'
 ];
 const randomLogos = [
             'https://i.ibb.co.com/1G0wV1Z/dummy-logo.png',
